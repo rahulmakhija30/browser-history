@@ -410,3 +410,40 @@ def test_brave_windows(become_windows, change_homedir):  # noqa: F811
             "https://www.reddit.com/",
         ),
     )
+
+def test_bookmarks_chrome_linux(become_linux, change_homedir):  # noqa: F811
+    """Test bookmarks for Chrome on Linux"""
+    c = browser_history.browsers.Chrome()
+    outputs = c.fetch_bookmarks()
+    bms = outputs.bookmarks
+    assert len(bms) == 2
+    assert_histories_equal(
+        bms[0],
+        (
+            datetime.datetime(
+                2021,
+                1,
+                11,
+                10,
+                29,
+                14,
+                tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), "IST"),
+            ),
+            "https://www.google.com/",
+        ),
+    )
+    assert_histories_equal(
+        bms[1],
+        (
+            datetime.datetime(
+                2021,
+                1,
+                11,
+                10,
+                29,
+                37,
+                tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), "IST"),
+            ),
+            "https://github.com/",
+        ),
+    )

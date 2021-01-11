@@ -1,0 +1,42 @@
+{
+   "checksum": "b0a0fa5a5484b5ec6ec19885824ae2ba",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13254834554102196",
+            "id": "5",
+            "name": "Google",
+            "type": "url",
+            "url": "https://www.google.com/"
+         }, {
+            "date_added": "13254834577272025",
+            "id": "6",
+            "name": "GitHub: Where the world builds software · GitHub",
+            "type": "url",
+            "url": "https://github.com/"
+         } ],
+         "date_added": "13254834534021938",
+         "date_modified": "13254834577272025",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13254834534021944",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13254834534021946",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
